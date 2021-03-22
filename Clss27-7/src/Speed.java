@@ -1,26 +1,12 @@
-import java.util.Scanner;
+
 public class Speed {
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner (System.in);
-		
-		
-		
-		
-		System.out.println("your name is:");
-		String name = input.toString();
-		
-		
-		System.out.println("your speed is:");
-		double speed = input.nextDouble();
-		
-		
-		System.out.println("the top speed is:");
-		double topSpeed = input.nextDouble();
-		
-		
-		System.out.println("the top speed in MPH");
-		double topSpeedMPH = input.nextDouble();
-		
+	
+	    public static void main(String[] args) {
+	        Car car = new Car();
+	        car.setName("Porsche Cayenne 4.8-litre V8");
+	        car.setTopSpeed(173.0d);
+	        System.out.println(car.getName() + " top speed in MPH is " + car.getTopSpeedMPH());
+	        System.out.println(car.getName() + " top speed in KMH is " + car.getTopSpeedKMH());
+	    }
 	}
-}
